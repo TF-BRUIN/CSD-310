@@ -1,6 +1,5 @@
 import mysql.connector 
 from mysql.connector import errorcode 
-
 line_break = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 
 pythonmysql = mysql.connector.connect(
@@ -11,8 +10,8 @@ pythonmysql = mysql.connector.connect(
 )
 
 mycursor = pythonmysql.cursor()
-
 print(line_break)
+
 mycursor.execute("SELECT * FROM film")
 myresult = mycursor.fetchall()
 for x in myresult:

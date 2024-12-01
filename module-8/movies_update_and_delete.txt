@@ -1,0 +1,27 @@
+import mysql.connector 
+from mysql.connector import errorcode 
+from show_films_code import show_films
+line_break = "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+pythonmysql = mysql.connector.connect(
+	user="root", 
+	password="RoyalRepublicHereICome4u+", 
+	host="localhost", 
+	database="movies"
+)
+mycursor = pythonmysql.cursor()
+print(line_break)
+
+show_films(mycursor."DISPLAYING FILMS")
+
+
+
+
+
+
+
+
+
+
+
+
+
